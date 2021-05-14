@@ -1,0 +1,9 @@
+.idea
+.vscode
+.metada
+.DS_Store
+
+*.zip
+*.class
+*.jar
+.mvn
