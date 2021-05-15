@@ -1,5 +1,6 @@
 package com.twsm.projectbds01crud.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,8 +19,10 @@ public class Client implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Column(length = 11)
     private String cpf;
     private Double income;
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE", name = "birth_date")
     private Instant birthDate;
     private Integer children;
 
